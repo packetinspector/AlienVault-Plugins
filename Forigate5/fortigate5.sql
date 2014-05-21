@@ -1,3 +1,12 @@
+DELETE FROM plugin WHERE id = "90009";
+DELETE FROM plugin_sid where plugin_id = "90009";
+
+
+INSERT IGNORE INTO plugin (id, type, name, description,product_type,vendor) VALUES (90009, 1, 'fortigate5', 'Fortigate 5 CE',10,'Fortinet');
+insert into software_cpe VALUES ('cpe:/h:fortinet:fortios:-', 'FortiOS', '5.0' , 'Fortinet FortiOS 5.0', 'Fortinet', 'fortigate5:90009');
+
+
+
 INSERT IGNORE INTO `plugin_sid` (`plugin_id`, `sid`, `category_id`, `subcategory_id`, `reliability`, `priority`, `name`) VALUES (90009, 2, 8, 188, 1, 2, 'Fortigate: allowed message');
 INSERT IGNORE INTO `plugin_sid` (`plugin_id`, `sid`, `category_id`, `subcategory_id`, `reliability`, `priority`, `name`) VALUES (90009, 3, 8, 188, 1, 3, 'Fortigate: violation message');
 INSERT IGNORE INTO `plugin_sid` (`plugin_id`, `sid`, `category_id`, `subcategory_id`, `reliability`, `priority`, `name`) VALUES (90009, 4, 8, 188, 1, 2, 'Fortigate: other message');
