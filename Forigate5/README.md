@@ -25,3 +25,10 @@ userdata9 | Rule Matched
 
 
 
+Installation:
+
+* Copy .cfg to /etc/ossim/agent/plugins/
+* Load SQL via "cat fortigate5.sql | ossim-db"
+* Restart ossim-server and ossim-agent
+* Load plugin via Asset or the old method
+* Enjoy the well parsed logs
