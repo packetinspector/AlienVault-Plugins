@@ -893,3 +893,4 @@ INSERT IGNORE INTO `plugin_sid` (`plugin_id`, `sid`, `category_id`, `subcategory
 INSERT IGNORE INTO `plugin_sid` (`plugin_id`, `sid`, `category_id`, `subcategory_id`, `reliability`, `priority`, `name`) VALUES (90009, 48300, NULL, NULL, 1, 5, 'Fortigate: erver side ftg is not properly');
 INSERT IGNORE INTO `plugin_sid` (`plugin_id`, `sid`, `category_id`, `subcategory_id`, `reliability`, `priority`, `name`) VALUES (90009, 48301, NULL, NULL, 1, 5, 'Fortigate: unepxected application type.');
 INSERT IGNORE INTO `plugin_sid` (`plugin_id`, `sid`, `category_id`, `subcategory_id`, `reliability`, `priority`, `name`) VALUES (90009, 51000, NULL, NULL, 1, 1, 'Fortigate: neighbor table change');
+INSERT IGNORE INTO `plugin_sid` (`plugin_id`, `sid`, `category_id`, `subcategory_id`, `reliability`, `priority`, `name`) VALUES (90009, 20019, NULL, NULL, 1, 1, 'Fortigate: Dead Gateway Detection');
