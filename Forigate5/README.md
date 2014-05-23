@@ -32,3 +32,6 @@ Installation:
 * Restart ossim-server and ossim-agent
 * Load plugin via Asset or the old method
 * Enjoy the well parsed logs
+
+
+The perl script included was used to make the SIDS.  You do not need it.  
