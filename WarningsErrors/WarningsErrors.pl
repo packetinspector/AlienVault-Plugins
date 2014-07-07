@@ -48,8 +48,8 @@ if ($opt{'c'}) {
 }
 
 sub check () {
-	 use Sys::Syslog;                        # all except setlogsock()
-	 use Sys::Syslog qw(:extended :macros);  # standard functions & macros
+	 use Sys::Syslog;                        
+	 use Sys::Syslog qw(:extended :macros); 
 	 setlogsock('udp', $loghost);
 	 openlog($plugin_name, '', $sysloginfo);
 	 syslog($sysloginfo, 'Test') if $debug;
@@ -129,11 +129,10 @@ shutdown=
 
 [simplematch]
 event_type=event
-regexp="[to-add]"
-plugin_sid=1
-device={\$host}
+regexp="(?P<sid>\d+)\,(?P<date>\d+),(?P<src_ip>\d+\.\d+\.\d+\.\d+)"
+plugin_sid={$sid}
 date={normalize_date(\$date)}
-src_ip=
+src_ip={\$src_ip}
 EOF
 }
 	
