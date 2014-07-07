@@ -130,7 +130,7 @@ shutdown=
 [simplematch]
 event_type=event
 regexp="(?P<sid>\d+)\,(?P<date>\d+),(?P<src_ip>\d+\.\d+\.\d+\.\d+)"
-plugin_sid={$sid}
+plugin_sid={\$sid}
 date={normalize_date(\$date)}
 src_ip={\$src_ip}
 EOF
