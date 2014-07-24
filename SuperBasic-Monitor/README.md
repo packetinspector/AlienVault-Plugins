@@ -46,11 +46,11 @@ This is then evaluated by the correlation engine.  Let's look at part of the xml
 A correlation directive can not begin with a monitor, so we start it off in this case with a cisco ASA event.  We can then call the monitor plugin.  Note the end of the rule:
 
 ```XML
-condition="gt" value="0" interval="2" time_out="2" absolute="true"/>
+... condition="gt" value="0" interval="2" time_out="2" absolute="true"/>
 ```
 This is where the plugin is evaluated.  This happens by:
 
-```
+```PERL
 eval ( [Script-Result] Condtion(gt) Value(0) )
 ```
 
