@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<directive id="500001" name="Basic Monitor Match" priority="2">
+   <rule type="detector" name="Whatever-Log-Cisco-ASA-Build" from="ANY" to="!HOME_NET" port_from="ANY" port_to="ANY" reliability="0" occurrence="1" plugin_id="1636" plugin_sid="302015">
+      <rules>
+         <rule type="monitor" name="Monitor-Match" from="1:SRC_IP" to="1:DST_IP" port_from="ANY" port_to="ANY" reliability="5" plugin_id="90050" plugin_sid="2" condition="gt" value="0" interval="2" time_out="2" absolute="true"/>
+      </rules>
+   </rule>
+</directive>
+
