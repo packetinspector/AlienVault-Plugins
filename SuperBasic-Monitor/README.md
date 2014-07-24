@@ -31,7 +31,7 @@ result={$1}
 
 Upon invocation this plugin will call grep, substituting the dest IP({to}).  We parse the results with the regex(regexp) and pass back the match as result.
 
-This is then evaluated by the correlation engine.  Let's look at part of the xml:
+This is then evaluated by the correlation engine.  Let's look at the xml responsible:
 
 ```XML
 <directive id="500001" name="Basic Monitor Match" priority="2">
