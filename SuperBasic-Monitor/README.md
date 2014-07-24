@@ -21,7 +21,7 @@ A look inside
 
 Let's look at the plugin:
 
-```
+```INI
 [scan-match]
 query="grep -c '{$to}' /etc/ossim/server/reputation.data"
 sid=any
@@ -33,7 +33,7 @@ Upon invocation this plugin will call grep, substituting the dest IP({to}).  We 
 
 This is then evaluated by the correlation engine.  Let's look at part of the xml:
 
-```
+```XML
 <directive id="500001" name="Basic Monitor Match" priority="2">
    <rule type="detector" name="Whatever-Log-Cisco-ASA-Build" from="ANY" to="!HOME_NET" port_from="ANY" port_to="ANY" reliability="0" occurrence="1" plugin_id="1636" plugin_sid="302015">
       <rules>
@@ -45,7 +45,7 @@ This is then evaluated by the correlation engine.  Let's look at part of the xml
 
 A correlation directive can not begin with a monitor, so we start it off in this case with a cisco ASA event.  We can then call the monitor plugin.  Note the end of the rule:
 
-```
+```XML
 condition="gt" value="0" interval="2" time_out="2" absolute="true"/>
 ```
 This is where the plugin is evaluated.  This happens by:
