@@ -4,7 +4,14 @@ This plugin will work for DefenseCenter 5.x and stand-alone 4.x sensors.
 
 Install:
 - Plugin in plugin dir
-- add sourcefire.sql to the db [restart ossim-server]
+```ShellSession
+alienvault:~#cp sourcefire.cfg /etc/ossim/agent/plugins/
+```
+- add sourcefire.sql to the db and restart ossim-server....
+```ShellSession
+alienvault:~#cat sourcefire.sql | ossim-db
+alienvault:~#service ossim-server restart
+```
 - [optional] add recent SID sql to the db [restart ossim-server]
 - You can add this plugin via the Asset Method(recommended) or the legacy way
 
