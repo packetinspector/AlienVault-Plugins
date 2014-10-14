@@ -8,7 +8,7 @@ Remember these devices can make a **lot** of logs.  Most of them will be traffic
 
 I have included the header and SQL for this to work inside 4.7.  You can use this with the new asset plugin system, which I recommend.  You'll find the device listed under Fortinet, then FortiOS.  
 
-This plugin uses a **new** ID of 90009, so if you have policy/correlation rules on the old plugin you'll need to updated them.  
+This plugin uses a **new** ID of 90009, so if you have policy/correlation rules on the old plugin you'll need to update them.  
 
 
 I have used the userdata fields for:
