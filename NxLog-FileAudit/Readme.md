@@ -6,9 +6,10 @@
 ####Plugin Install:
 
 ```
-copy nxlog-audit.cfg to /etc/ossim/agent/plugins/
+cp nxlog-audit.cfg to /etc/ossim/agent/plugins/
 cat nxlog-audit.sql | ossim-db
 dpkg-reconfigure alienvault-cpe
+/etc/init.d/ossim-server restart
 ...
 (choose asset and enable plugin)
 ```
