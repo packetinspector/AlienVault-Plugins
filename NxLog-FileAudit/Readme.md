@@ -8,6 +8,8 @@
 copy nxlog-audit.cfg to /etc/ossim/agent/plugins/
 cat nxlog-audit.sql | ossim-db
 dpkg-reconfigure alienvault-cpe
+...
+(choose asset and enable plugin)
 ```
 
 ####NxLog
@@ -23,6 +25,7 @@ Change IP to your USM Sensor
 ```
 Enable Auditing
 Pick Directories to Monitor
+Enable Settings per Example
 ```
 
 #####Audit Setup
