@@ -14,7 +14,7 @@ dpkg-reconfigure alienvault-cpe
 
 ```
 Install NxLog
-Use Conf: (https://github.com/packetinspector/random/blob/master/nxlog-windows-security-audit.conf)
+Use Conf: ([here on github too](https://github.com/packetinspector/random/blob/master/nxlog-windows-security-audit.conf))
 Change IP to your USM Sensor
 ```
 
@@ -27,12 +27,12 @@ Pick Directories to Monitor
 
 #####Audit Setup
 
-![perms](https://raw.githubusercontent.com/packetinspector/Alienvault-Plugins/tree/master/NxLog-Audit/master/perms.png)
+![perms](https://raw.githubusercontent.com/packetinspector/AlienVault-Plugins/master/NxLog-FileAudit/perms.png)
 
 #####Choose Plugin
 
-![plugin](https://raw.githubusercontent.com/packetinspector/Alienvault-Plugins/tree/master/NxLog-Audit/master/plugin.png)
+![plugin](https://raw.githubusercontent.com/packetinspector/AlienVault-Plugins/master/NxLog-FileAudit/plugin.png)
 
 #####Sample
 
-![events](https://raw.githubusercontent.com/packetinspector/Alienvault-Plugins/tree/master/NxLog-Audit/master/events.png)
+![events](https://raw.githubusercontent.com/packetinspector/AlienVault-Plugins/master/NxLog-FileAudit/events.png)
