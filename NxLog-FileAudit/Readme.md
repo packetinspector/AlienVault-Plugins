@@ -1,6 +1,7 @@
 ##File Auditing with NxLog+USM
 
 - Author: PacketInspector ([@pkt_inspector](https://twitter.com/pkt_inspector))
+- Tested on Win10, likely only works on 2008+...You tell me, eventIDs keep changing.
 
 ####Plugin Install:
 
