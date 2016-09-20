@@ -1,0 +1,14 @@
+# Import me to /etc/logrotate.d to rotate iis logs
+/var/log/iis.log
+{
+        rotate 4
+        daily
+        missingok
+        notifempty
+        compress
+        delaycompress
+        sharedscripts
+        postrotate
+                invoke-rc.d rsyslog reload > /dev/null
+        endscript
+}
